@@ -1,0 +1,31 @@
+{
+    "heroSection": [
+        {
+            "title":"TItle for movie 1",
+            "imageSrc":"/images/hero/1.png"
+        },
+        {
+            "title":"TItle for movie 2",
+            "imageSrc":"/images/hero/2.png"
+        },
+        {
+            "title":"TItle for movie 3",
+            "imageSrc":"/images/hero/3.png"
+        },
+        {
+            "title":"TItle for movie 4",
+            "imageSrc":"/images/hero/4.png"
+        },
+        {
+            "title":"TItle for movie 3",
+            "imageSrc":"/images/hero/5.png"
+        }
+    ],
+    "comments": [
+      { "id": "1", "text": "a comment about post 1", "postId": "1" },
+      { "id": "2", "text": "another comment about post 1", "postId": "1" }
+    ],
+    "profile": {
+      "name": "typicode"
+    }
+  }
