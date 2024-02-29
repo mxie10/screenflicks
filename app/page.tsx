@@ -1,6 +1,5 @@
-import Image from "next/image";
 import HeroSection from "./component/HeroSection";
-import testImage from './public/images/1.jpg';
+import FeaturedFilms from "./component/featuredFilms/FeaturedFilms";
 
 export default function Home() {
   return (
@@ -11,7 +10,11 @@ export default function Home() {
         '
     >
         <HeroSection/>
-        {/* <Image src={testImage} alt="My Image" width={300} height={200} /> */}
+        <div className="px-9 mt-10">
+          <FeaturedFilms/>
+        </div>
+
+        <div className="mt-20">This is footer!!!!</div>
     </div>
   );
 }

@@ -1,24 +1,29 @@
 {
     "heroSection": [
         {
-            "title":"TItle for movie 1",
-            "imageSrc":"/images/hero/1.png"
+            "title":"The Godfather",
+            "imageSrc":"/images/hero/1.png",
+            "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
         },
         {
-            "title":"TItle for movie 2",
-            "imageSrc":"/images/hero/2.png"
+            "title":"Shawshank Redemption",
+            "imageSrc":"/images/hero/2.png",
+            "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
         },
         {
-            "title":"TItle for movie 3",
-            "imageSrc":"/images/hero/3.png"
+            "title":"Pulp Fiction",
+            "imageSrc":"/images/hero/3.png",
+            "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
         },
         {
             "title":"TItle for movie 4",
-            "imageSrc":"/images/hero/4.png"
+            "imageSrc":"/images/hero/4.png",
+            "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
         },
         {
             "title":"TItle for movie 3",
-            "imageSrc":"/images/hero/5.png"
+            "imageSrc":"/images/hero/5.png",
+            "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
         }
     ],
     "comments": [
