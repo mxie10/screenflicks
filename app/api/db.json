@@ -26,11 +26,94 @@
             "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
         }
     ],
-    "comments": [
-      { "id": "1", "text": "a comment about post 1", "postId": "1" },
-      { "id": "2", "text": "another comment about post 1", "postId": "1" }
-    ],
-    "profile": {
-      "name": "typicode"
-    }
+    "featuredMovie": [
+        {
+            "title":"First Contact",
+            "imageSrc":"/images/featuredMovie/firstContact.jpg",
+            "year":2023,
+            "length":{"hour":1,"min":29},
+            "type":["Drama","Horror","Sci-Fi"],
+            "rate":"PG-13"
+        },
+        {
+            "title":"Forbidden Knowledge",
+            "imageSrc":"/images/featuredMovie/forbiddenKnowledge.jpg",
+            "year":2021,
+            "length":{"hour":2,"min":29},
+            "type":["Drama","Sci-Fi"],
+            "rate":"PG-13"
+        },
+        {
+            "title":"Ice Man",
+            "imageSrc":"/images/featuredMovie/iceMan.jpg",
+            "year":2022,
+            "length":{"hour":1,"min":42},
+            "type":["Drama","Horror","Sci-Fi"],
+            "rate":"PG-13"
+        },
+        {
+            "title":"Run All Night",
+            "imageSrc":"/images/featuredMovie/runAllNight.jpg",
+            "year":2023,
+            "length":{"hour":2,"min":2},
+            "type":["Horror","Sci-Fi"],
+            "rate":"PG-13"
+        },
+        {
+            "title":"The Arrival",
+            "imageSrc":"/images/featuredMovie/theArrival.jpg",
+            "year":2020,
+            "length":{"hour":2,"min":12},
+            "type":["Sci-Fi"],
+            "rate":"PG-13"
+        },
+        {
+            "title":"The Rising Hawk",
+            "imageSrc":"/images/featuredMovie/theRisingHawk.jpg",
+            "year":2022,
+            "length":{"hour":1,"min":39},
+            "type":["Action","Sci-Fi"],
+            "rate":"PG-13"
+        },
+        {
+            "title":"Transformers",
+            "imageSrc":"/images/featuredMovie/transformers.jpg",
+            "year":2022,
+            "length":{"hour":1,"min":32},
+            "type":["cartoon","Action","Sci-Fi"],
+            "rate":"PG-7"
+        },
+        {
+            "title":"Run All Night",
+            "imageSrc":"/images/featuredMovie/runAllNight.jpg",
+            "year":2023,
+            "length":{"hour":2,"min":2},
+            "type":["Horror","Sci-Fi"],
+            "rate":"PG-13"
+        },
+        {
+            "title":"The Arrival",
+            "imageSrc":"/images/featuredMovie/theArrival.jpg",
+            "year":2020,
+            "length":{"hour":2,"min":12},
+            "type":["Sci-Fi"],
+            "rate":"PG-13"
+        },
+        {
+            "title":"The Rising Hawk",
+            "imageSrc":"/images/featuredMovie/theRisingHawk.jpg",
+            "year":2022,
+            "length":{"hour":1,"min":39},
+            "type":["Action","Sci-Fi"],
+            "rate":"PG-13"
+        },
+        {
+            "title":"Transformers",
+            "imageSrc":"/images/featuredMovie/transformers.jpg",
+            "year":2022,
+            "length":{"hour":1,"min":32},
+            "type":["cartoon","Action","Sci-Fi"],
+            "rate":"PG-7"
+        }
+    ]
   }

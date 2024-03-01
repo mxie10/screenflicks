@@ -22,6 +22,9 @@ const config = {
         '100': '26rem',
         '108':'30rem'
       },
+      width:{
+        '1/7':'14.28%'
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

@@ -6,6 +6,7 @@ import useSideBar from './hooks/useSidebar';
 import SideBar from "./component/Sidebar";
 import Header from "./component/NavBar";
 import "./globals.css";
+import Footer from "./component/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -39,13 +40,14 @@ const LayoutBody: React.FC<LayoutBodyProps> = ({ children }) => {
   }
 
   return (
-    <div className="bg-neutral-50 flex flex-col relative z-10 min-h-screen">
+    <div className="flex flex-col relative z-10 min-h-screen">
       <ToggleIcon />
       <SideBar />
       <Header />
       <div className="mt-12">
         {children}
       </div>
+      <Footer/>
     </div>
   )
 }

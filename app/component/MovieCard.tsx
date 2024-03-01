@@ -1,13 +1,11 @@
 'use client'
 import React, { useState } from 'react';
 import { FaCirclePlay } from "react-icons/fa6";
-import { RiMovieFill } from "react-icons/ri";
+import MovieCardTypes from '../interfaces/MovieCardProps';
 
-interface MovieCardProps {
+const MovieCard: React.FC<MovieCardTypes> = (props) => {
 
-}
-
-const MovieCard: React.FC<MovieCardProps> = () => {
+    const { title, imageSrc, year, length, type, rate } = props;
 
     const [ifShowPlayIcon, setIfShowPlayIcon] = useState(false);
 
@@ -20,8 +18,9 @@ const MovieCard: React.FC<MovieCardProps> = () => {
     }
 
     return (
-        <div className='w-52 h-auto'>
-            <div 
+        <div className='w-52 h-auto clear-both'>
+            {/* movie profile */}
+            <div
                 className={`
                     flex 
                     flex-col 
@@ -31,32 +30,42 @@ const MovieCard: React.FC<MovieCardProps> = () => {
                     justify-center 
                     cursor-pointer
                     ${ifShowPlayIcon ? 'brightness-50' : ''}
-                    h-72
+                    h-4/5
                 `}
                 onMouseOver={showPlayIcon}
                 onMouseLeave={hideShowPlayIcon}
             >
                 {/* image */}
-                <img
-                    src='/images/featuredMovie/FirstContact.jpg'
-                    className='box-border rounded-lg relative'
-                />
+                <div className='h-76 w-52'>
+                    <img
+                        src={imageSrc}
+                        className='
+                            rounded-lg 
+                            relative 
+                            object-cover
+                            box-border
+                        '
+                    />
+                </div>
                 {/* play icon */}
-                <div 
+                <div
                     className={`
                         absolute 
                         flex 
                         box-border
-                        ${ifShowPlayIcon ? 'block':'hidden'}
+                        ${ifShowPlayIcon ? 'block' : 'hidden'}
                     `}>
-                    <FaCirclePlay size={40}/>
+                    <FaCirclePlay size={40} />
                 </div>
             </div>
-            <div className='flex flex-col mt-2'>
-                <div className='text-md font-bold'>First Contact</div>
+            {/* movie details */}
+            <div className='flex flex-col mt-2 h-1/5'>
+                <div className='text-md font-bold'>{title}</div>
                 <div className='flex flex-row justify-between'>
-                    <div className='text-xs font-semibold'>2023 - 1 hr 29 min</div>
-                    <div 
+                    <div className='text-xs font-semibold'>
+                        {year} - {length.hour} hr {length.min} min
+                    </div>
+                    <div
                         className='
                             bg-gray-600 
                             text-white 
@@ -67,11 +76,26 @@ const MovieCard: React.FC<MovieCardProps> = () => {
                             items-center
                             justify-center
                         '>
-                            PG-13
+                        {rate}
                     </div>
                 </div>
-                <div className='text-xs font-semibold text-neutral-500'>
-                    Drama · Horror · Sci-Fi
+                <div
+                    className='
+                        text-xs 
+                        font-semibold 
+                        text-neutral-500 
+                        flex 
+                        flex-row 
+                        items-center
+                        mt-1
+                        gap-2
+                    '
+                >
+                    {type && type.map((item) => {
+                        return (
+                            <div key={item}>{item}</div>
+                        )
+                    })}
                 </div>
             </div>
         </div>
