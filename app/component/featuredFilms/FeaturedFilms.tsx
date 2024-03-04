@@ -82,7 +82,7 @@ const FeaturedFilms = () => {
                         flex-row 
                         gap-4
                         overflow-x-scroll
-                         overflow-y-hidden
+                        overflow-y-hidden
                         z-0
                     '
                     ref={movieContainerRef}

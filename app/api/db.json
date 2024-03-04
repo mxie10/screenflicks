@@ -33,7 +33,8 @@
             "year":2023,
             "length":{"hour":1,"min":29},
             "type":["Drama","Horror","Sci-Fi"],
-            "rate":"PG-13"
+            "rate":"PG-13",
+            "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
         },
         {
             "title":"Forbidden Knowledge",
@@ -41,7 +42,8 @@
             "year":2021,
             "length":{"hour":2,"min":29},
             "type":["Drama","Sci-Fi"],
-            "rate":"PG-13"
+            "rate":"PG-13",
+            "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
         },
         {
             "title":"Ice Man",
@@ -49,7 +51,8 @@
             "year":2022,
             "length":{"hour":1,"min":42},
             "type":["Drama","Horror","Sci-Fi"],
-            "rate":"PG-13"
+            "rate":"PG-13",
+            "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
         },
         {
             "title":"Run All Night",
@@ -57,7 +60,8 @@
             "year":2023,
             "length":{"hour":2,"min":2},
             "type":["Horror","Sci-Fi"],
-            "rate":"PG-13"
+            "rate":"PG-13",
+            "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
         },
         {
             "title":"The Arrival",
@@ -65,7 +69,8 @@
             "year":2020,
             "length":{"hour":2,"min":12},
             "type":["Sci-Fi"],
-            "rate":"PG-13"
+            "rate":"PG-13",
+            "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
         },
         {
             "title":"The Rising Hawk",
@@ -73,7 +78,8 @@
             "year":2022,
             "length":{"hour":1,"min":39},
             "type":["Action","Sci-Fi"],
-            "rate":"PG-13"
+            "rate":"PG-13",
+            "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
         },
         {
             "title":"Transformers",
@@ -81,39 +87,152 @@
             "year":2022,
             "length":{"hour":1,"min":32},
             "type":["cartoon","Action","Sci-Fi"],
-            "rate":"PG-7"
-        },
-        {
-            "title":"Run All Night",
-            "imageSrc":"/images/featuredMovie/runAllNight.jpg",
-            "year":2023,
-            "length":{"hour":2,"min":2},
-            "type":["Horror","Sci-Fi"],
-            "rate":"PG-13"
-        },
-        {
-            "title":"The Arrival",
-            "imageSrc":"/images/featuredMovie/theArrival.jpg",
-            "year":2020,
-            "length":{"hour":2,"min":12},
-            "type":["Sci-Fi"],
-            "rate":"PG-13"
-        },
-        {
-            "title":"The Rising Hawk",
-            "imageSrc":"/images/featuredMovie/theRisingHawk.jpg",
-            "year":2022,
-            "length":{"hour":1,"min":39},
-            "type":["Action","Sci-Fi"],
-            "rate":"PG-13"
-        },
-        {
-            "title":"Transformers",
-            "imageSrc":"/images/featuredMovie/transformers.jpg",
-            "year":2022,
-            "length":{"hour":1,"min":32},
-            "type":["cartoon","Action","Sci-Fi"],
-            "rate":"PG-7"
+            "rate":"PG-7",
+            "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
         }
+    ],
+    "movies": [
+        {
+            "title":"In This Corner of the World",
+            "imageSrc":"/images/featuredMovie/inThisCorner.jpg",
+            "year":2023,
+            "length":{"hour":1,"min":29},
+            "type":["Drama","War","Sci-Fi"],
+            "rate":"PG-13",
+            "description":"Set in Hiroshima during World War II, a newly married 18-year-old girl tries to maintain the will to live as she struggles with keeping her family fed.",
+            "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
+        },
+        {
+            "title":"Forbidden Knowledge",
+            "imageSrc":"/images/featuredMovie/forbiddenKnowledge.jpg",
+            "year":2021,
+            "length":{"hour":2,"min":29},
+            "type":["Drama","Sci-Fi"],
+            "rate":"PG-13",
+            "description":"Follows Nicolas Shaw, a retired U.S. special operative who becomes part of an elite invisible team that takes out the worst villains around the world.",
+            "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
+
+        },
+        {
+            "title":"Ice Man",
+            "imageSrc":"/images/featuredMovie/iceMan.jpg",
+            "year":2022,
+            "length":{"hour":1,"min":42},
+            "type":["Drama","Horror","Sci-Fi"],
+            "rate":"PG-13",
+            "description":"Follows Nicolas Shaw, a retired U.S. special operative who becomes part of an elite invisible team that takes out the worst villains around the world.",
+            "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
+        },
+        {
+            "title":"Run All Night",
+            "imageSrc":"/images/featuredMovie/runAllNight.jpg",
+            "year":2023,
+            "length":{"hour":2,"min":2},
+            "type":["Horror","Sci-Fi"],
+            "rate":"PG-13",
+            "description":"Follows Nicolas Shaw, a retired U.S. special operative who becomes part of an elite invisible team that takes out the worst villains around the world.",
+            "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
+        },
+        {
+            "title":"The Arrival",
+            "imageSrc":"/images/featuredMovie/theArrival.jpg",
+            "year":2020,
+            "length":{"hour":2,"min":12},
+            "type":["Sci-Fi"],
+            "rate":"PG-13",
+            "description":"Follows Nicolas Shaw, a retired U.S. special operative who becomes part of an elite invisible team that takes out the worst villains around the world.",
+            "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
+        },
+        {
+            "title":"The Rising Hawk",
+            "imageSrc":"/images/featuredMovie/theRisingHawk.jpg",
+            "year":2022,
+            "length":{"hour":1,"min":39},
+            "type":["Action","Sci-Fi"],
+            "rate":"PG-13",
+            "description":"Follows Nicolas Shaw, a retired U.S. special operative who becomes part of an elite invisible team that takes out the worst villains around the world.",
+            "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
+        },
+        {
+            "title":"Transformers",
+            "imageSrc":"/images/featuredMovie/transformers.jpg",
+            "year":2022,
+            "length":{"hour":1,"min":32},
+            "type":["cartoon","Action","Sci-Fi"],
+            "rate":"PG-7",
+            "description":"Follows Nicolas Shaw, a retired U.S. special operative who becomes part of an elite invisible team that takes out the worst villains around the world.",
+            "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
+        },
+        {
+            "title":"First Contact",
+            "imageSrc":"/images/featuredMovie/firstContact.jpg",
+            "year":2023,
+            "length":{"hour":1,"min":29},
+            "type":["Drama","Horror","Sci-Fi"],
+            "rate":"PG-13",
+            "description":"Follows Nicolas Shaw, a retired U.S. special operative who becomes part of an elite invisible team that takes out the worst villains around the world.",
+            "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
+        },
+        {
+            "title":"Forbidden Knowledge",
+            "imageSrc":"/images/featuredMovie/forbiddenKnowledge.jpg",
+            "year":2021,
+            "length":{"hour":2,"min":29},
+            "type":["Drama","Sci-Fi"],
+            "rate":"PG-13",
+            "description":"Follows Nicolas Shaw, a retired U.S. special operative who becomes part of an elite invisible team that takes out the worst villains around the world.",
+            "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
+        },
+        {
+            "title":"Ice Man",
+            "imageSrc":"/images/featuredMovie/iceMan.jpg",
+            "year":2022,
+            "length":{"hour":1,"min":42},
+            "type":["Drama","Horror","Sci-Fi"],
+            "rate":"PG-13",
+            "description":"Follows Nicolas Shaw, a retired U.S. special operative who becomes part of an elite invisible team that takes out the worst villains around the world.",
+            "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
+        },
+        {
+            "title":"Run All Night",
+            "imageSrc":"/images/featuredMovie/runAllNight.jpg",
+            "year":2023,
+            "length":{"hour":2,"min":2},
+            "type":["Horror","Sci-Fi"],
+            "rate":"PG-13",
+            "description":"Follows Nicolas Shaw, a retired U.S. special operative who becomes part of an elite invisible team that takes out the worst villains around the world.",
+            "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
+        },
+        {
+            "title":"The Arrival",
+            "imageSrc":"/images/featuredMovie/theArrival.jpg",
+            "year":2020,
+            "length":{"hour":2,"min":12},
+            "type":["Sci-Fi"],
+            "rate":"PG-13",
+            "description":"Follows Nicolas Shaw, a retired U.S. special operative who becomes part of an elite invisible team that takes out the worst villains around the world.",
+            "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
+        },
+        {
+            "title":"The Rising Hawk",
+            "imageSrc":"/images/featuredMovie/theRisingHawk.jpg",
+            "year":2022,
+            "length":{"hour":1,"min":39},
+            "type":["Action","Sci-Fi"],
+            "rate":"PG-13",
+            "description":"Follows Nicolas Shaw, a retired U.S. special operative who becomes part of an elite invisible team that takes out the worst villains around the world.",
+            "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
+        },
+        {
+            "title":"The Arrival",
+            "imageSrc":"/images/featuredMovie/theArrival.jpg",
+            "year":2020,
+            "length":{"hour":2,"min":12},
+            "type":["Sci-Fi"],
+            "rate":"PG-13",
+            "description":"Follows Nicolas Shaw, a retired U.S. special operative who becomes part of an elite invisible team that takes out the worst villains around the world.",
+            "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
+        }
+       
     ]
   }

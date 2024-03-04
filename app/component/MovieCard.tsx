@@ -5,7 +5,7 @@ import MovieCardTypes from '../interfaces/MovieCardProps';
 
 const MovieCard: React.FC<MovieCardTypes> = (props) => {
 
-    const { title, imageSrc, year, length, type, rate } = props;
+    const { title, imageSrc, year, length, type, rate, souce, onClick} = props;
 
     const [ifShowPlayIcon, setIfShowPlayIcon] = useState(false);
 
@@ -18,7 +18,12 @@ const MovieCard: React.FC<MovieCardTypes> = (props) => {
     }
 
     return (
-        <div className='w-52 h-auto clear-both'>
+        <div 
+            className='
+                h-auto
+            '
+            onClick = {onClick}
+        >
             {/* movie profile */}
             <div
                 className={`
@@ -36,7 +41,12 @@ const MovieCard: React.FC<MovieCardTypes> = (props) => {
                 onMouseLeave={hideShowPlayIcon}
             >
                 {/* image */}
-                <div className='h-76 w-52'>
+                <div 
+                    className={`
+                        ${souce === 'movieList' ? 'w-full h-full' : 'h-76 w-52'}
+
+                    `}
+                >
                     <img
                         src={imageSrc}
                         className='

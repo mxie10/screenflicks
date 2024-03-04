@@ -4,9 +4,11 @@ import { Inter } from "next/font/google";
 import { FaAlignJustify } from "react-icons/fa";
 import useSideBar from './hooks/useSidebar';
 import SideBar from "./component/Sidebar";
-import Header from "./component/NavBar";
+import NavBar from "./component/NavBar";
 import "./globals.css";
 import Footer from "./component/Footer";
+import LoginModal from "./component/modals/LoginModal";
+import RegisterModal from "./component/modals/RegisterModal";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,13 +43,15 @@ const LayoutBody: React.FC<LayoutBodyProps> = ({ children }) => {
 
   return (
     <div className="flex flex-col relative z-10 min-h-screen">
+      <LoginModal/>
+      <RegisterModal/>
       <ToggleIcon />
       <SideBar />
-      <Header />
+      <NavBar />
       <div className="mt-12">
         {children}
       </div>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   )
 }
