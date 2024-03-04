@@ -27,16 +27,16 @@ const HeroSection = () => {
   const { heros } = useHeros();
 
 
-  useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      setSlideIndex((prevIndex) => {
-        const newIndex = (prevIndex + 1) % heros.length;
-        scroll(newIndex);
-        return newIndex;
-      });
-    }, 10000);
-    return () => clearTimeout(timeoutId);
-  }, [slideIndex, heros.length]);
+  // useEffect(() => {
+  //   const timeoutId = setTimeout(() => {
+  //     setSlideIndex((prevIndex) => {
+  //       const newIndex = (prevIndex + 1) % heros.length;
+  //       scroll(newIndex);
+  //       return newIndex;
+  //     });
+  //   }, 10000);
+  //   return () => clearTimeout(timeoutId);
+  // }, [slideIndex, heros.length]);
 
   const scroll = (index: number) => {
     setSlideIndex(index % heros.length);
@@ -44,31 +44,91 @@ const HeroSection = () => {
   }
 
   const Page = ({ offset, imageSrc, title, actors, onClick }: PageProps) => (
-    <ParallaxLayer offset={offset} speed={0.2} onClick={onClick}>
-      <Image
+    <ParallaxLayer offset={offset} speed={0.2} onClick={onClick} >
+      {/* <Image
+        className='
+          brightness-50
+          md:h-full
+          h-24
+        '
         src={imageSrc}
         alt="My Image"
         layout="fill"
-        className='brightness-50'
+        
+      /> */}
+      <img
+        className='
+           brightness-50
+           w-full
+           h-full
+           absolute
+        '
+        src={imageSrc}
+        alt="My Image"
       />
+      {/* hero section movie info */}
       <div
         className='
               z-50 
               relative
               ml-20
-              mt-56
+              mt-20
+              lg:mt-56
+              md:mt-48
+              sm:mt-20
               flex
           '
       >
         <div className='flex flex-col gap-1'>
-          <div className='flex flex-row items-center gap-2 py-2'>
-            <div className='text-4xl text-white'>{title}</div>
-            <Button className='text-lg p-4 rounded-lg'>
+          <div 
+            className='
+              flex
+              flex-col
+              sm:flex 
+              sm:flex-row 
+              sm:items-center 
+              gap-2 
+              py-2
+            '
+          >
+            <div 
+              className='
+                text-white
+                text-4xl
+              '
+            >
+              {title}
+            </div>
+            <Button 
+              className='
+                text-lg 
+                p-4 
+                rounded-lg
+                 w-48
+                sm:w-auto
+              '
+            >
               <FaPlayCircle />
-              <span className='ml-2' onClick={() => { }}>Play Now</span>
+              <span 
+                className='
+                  ml-2
+                ' 
+                onClick={() => { }}
+              >
+                Play Now
+              </span>
             </Button>
           </div>
-          <div className='text-md text-white p-2 flex flex-row gap-2'>
+          <div 
+            className='
+              text-md 
+              text-white 
+              p-2 
+              gap-2
+              hidden
+              sm:flex flex-row
+            '
+          >
             {actors && actors.map((actor) => {
               return (
                 <div key={actor}>{actor}</div>
@@ -92,12 +152,18 @@ const HeroSection = () => {
             flex-row 
             items-center 
             justify-between 
-            w-1/6
           bg-black
             py-1
             px-4
-            mt-96
             rounded-lg
+            mt-48
+            lg:mt-96
+            md:mt-80
+            sm: mt-56
+            w-1/3
+            lg:w-1/6
+            md:w-1/3
+            sm:1/2
           '
         >
           {[0, 1, 2, 3, 4].map((index) => {
@@ -115,8 +181,15 @@ const HeroSection = () => {
   }
 
   return (
-    <div className='h-108 relative'>
-      <Parallax ref={parallax} pages={5} horizontal>
+    <div 
+      className='
+        relative
+        lg:h-108
+        md:h-96
+        sm: h-60
+      '
+    >
+      <Parallax ref={parallax} pages={5} horizontal enabled={false}>
         {heros.map((item: Hero, index: number) => {
           return (
             <Page

@@ -1,8 +1,8 @@
 'use client'
 
-import { Button } from "@/components/ui/button";
 import { useCallback, useEffect, useState } from "react";
 import { IoMdClose } from 'react-icons/io';
+import Button from "../inputs/ButtonAlt";
 
 interface ModalProps {
     isOpen: boolean,
@@ -14,6 +14,7 @@ interface ModalProps {
     disabled?: boolean;
     secondaryAction?: () => void;
     secondaryActionLabel?: string;
+    actionlabel?:string;
 }
 
 const Modal: React.FC<ModalProps> = ({
@@ -25,6 +26,7 @@ const Modal: React.FC<ModalProps> = ({
     actionLabel,
     disabled,
     secondaryAction,
+    actionlabel,
     secondaryActionLabel
 }) => {
     const [showModal, setShowModal] = useState(isOpen) // if we want to use useState, then we must define 'use client' at the top of the page
@@ -149,7 +151,10 @@ const Modal: React.FC<ModalProps> = ({
                                         gap-4
                                         w-full
                                     ">
-                                 <Button>Button</Button>
+                                 <Button
+                                    disabled={disabled}
+                                    label={actionLabel}
+                                />
                                 </div>
                                 {footer}
                             </div>

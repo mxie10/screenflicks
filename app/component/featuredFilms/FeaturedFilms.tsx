@@ -68,7 +68,7 @@ const FeaturedFilms = () => {
                         flex 
                         justify-center 
                         items-center
-                        ${canScrollLeft ? 'block' :'hidden'}
+                        ${canScrollLeft ? 'hidden' :'hidden'}
                     `}
                 >
                     <FaChevronCircleLeft size={30}/>

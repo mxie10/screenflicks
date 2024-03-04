@@ -20,7 +20,7 @@ const RegisterModal = () => {
     const bodyContent = (
         <div className='flex flex-col gap-4'>
             <Heading
-                title="Welcome to Airbnb"
+                title="Welcome to ScreenFlicks"
                 subtitle='Create an account'
             />
             <Input
@@ -73,7 +73,6 @@ const RegisterModal = () => {
                         Log in
                     </div>
                 </div>
-
             </div>
         </div>
     )
@@ -83,10 +82,11 @@ const RegisterModal = () => {
             disabled={isLoading}
             isOpen={registerModal.isOpen}
             title="Register"
-            actionLabel="Continue"
+            actionLabel="Register"
             onClose={registerModal.onClose}
             body={bodyContent}
             footer={footerContent}
+            actionlabel='Register'
         />
     )
 }

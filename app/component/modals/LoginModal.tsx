@@ -1,14 +1,12 @@
 'use client'
 
-import { AiFillGithub } from 'react-icons/ai';
-import { FcGoogle } from 'react-icons/fc';
 import { useCallback, useState } from 'react';
 import useRegisterModal from '../../hooks/useRegisterModal'
 import Modal from './Modal';
 import Heading from '../Heading';
-import { toast } from 'react-hot-toast';
 import useLoginModal from '../../hooks/useLoginModal'
 import { useRouter } from 'next/navigation';
+import Input from '../inputs/InputAlt';
 
 const LoginModal = () => {
     const router = useRouter();
@@ -27,14 +25,16 @@ const LoginModal = () => {
                 title="Welcome back"
                 subtitle='Login to your account'
             />
-            <input
+            <Input
                 id="email"
+                label="Email"
                 disabled={isLoading}
                 required
             />
-            <input
+            <Input
                 id="password"
                 type="password"
+                label="Password"
                 disabled={isLoading}
                 required
             />
@@ -78,7 +78,7 @@ const LoginModal = () => {
             disabled={isLoading}
             isOpen={loginModal.isOpen}
             title="Login"
-            actionLabel="Continue"
+            actionLabel="Log in"
             onClose={loginModal.onClose}
             body={bodyContent}
             footer={footerContent}
