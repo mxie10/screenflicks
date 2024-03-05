@@ -1,28 +1,28 @@
 {
     "heroSection": [
         {
+            "title":"Frozen",
+            "imageSrc":"https://target.scene7.com/is/image/Target/57626-160613_1465794713056?wid=1200&fmt=pjpeg&qlt=80",
+            "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
+        },
+        {
             "title":"The Godfather",
-            "imageSrc":"/images/hero/1.png",
+            "imageSrc":"/images/hero/theGodFather.jpg",
             "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
         },
         {
-            "title":"Shawshank Redemption",
-            "imageSrc":"/images/hero/2.png",
+            "title":"The StepDaughter",
+            "imageSrc":"/images/hero/theStepDaughter.jpg",
             "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
         },
         {
-            "title":"Pulp Fiction",
-            "imageSrc":"/images/hero/3.png",
+            "title":"Colombiana",
+            "imageSrc":"/images/hero/colombiana.jpg",
             "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
         },
         {
-            "title":"TItle for movie 4",
-            "imageSrc":"/images/hero/4.png",
-            "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
-        },
-        {
-            "title":"TItle for movie 3",
-            "imageSrc":"/images/hero/5.png",
+            "title":"Shaw Shank Redemption",
+            "imageSrc":"/images/hero/shawshankRedemption.jpg",
             "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
         }
     ],

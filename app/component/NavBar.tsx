@@ -4,6 +4,7 @@ import React from 'react';
 import { FaSearch } from "react-icons/fa";
 import { useRouter } from 'next/navigation';
 import useLoginModal from '../hooks/useLoginModal';
+import SearchBar from './SearchBar';
 
 const menu = [
     {
@@ -39,10 +40,10 @@ const NavBar = () => {
             hidden
             h-12 
             px-5
-            md:flex 
-            md:flex-row 
-            md:justify-between 
-            md:items-center
+            lg:flex 
+            lg:flex-row 
+            lg:justify-between 
+            lg:items-center
             fixed
             w-full
             shadow-md
@@ -59,7 +60,7 @@ const NavBar = () => {
                 {menu && menu.map((item)=>{
                     return (
                         <div 
-                            className='text-md cursor-pointer font-semibold' 
+                            className='text-md cursor-pointer font-semibold font-serif' 
                             key={item.title}
                             onClick={()=>router.push(item.link)}
                         >
@@ -67,25 +68,17 @@ const NavBar = () => {
                         </div>
                     )
                 })}
-                <div className='ml-10 flex flex-row items-center relative'>
-                    <input 
-                        type="text" 
-                        placeholder="Explore the Cinematic World" 
-                        className='p-2 rounded-md w-64 pl-9 text-sm' 
-                    />
-                    <FaSearch size={20} className='absolute ml-2'/>
-                </div>
+                <SearchBar/>
             </div>
             <div className='flex flex-row justify-center items-center gap-5'>
-            <div className='text-md cursor-pointer font-semibold'>Redeem</div>
+            <div className='text-md cursor-pointer font-semibold font-serif'>Redeem</div>
                 <div 
-                    className='text-md cursor-pointer font-semibold' 
+                    className='text-md cursor-pointer font-semibold font-serif' 
                     onClick={openLoginModal}
                 >
                     Sign In
                 </div>
             </div>
-
         </div>
     )
 }

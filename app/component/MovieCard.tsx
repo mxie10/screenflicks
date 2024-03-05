@@ -29,7 +29,7 @@ const MovieCard: React.FC<MovieCardTypes> = (props) => {
                 className={`
                     flex 
                     flex-col 
-                    rounded-lg 
+                    rounded-md
                     relative 
                     items-center 
                     justify-center 
@@ -65,7 +65,7 @@ const MovieCard: React.FC<MovieCardTypes> = (props) => {
                         box-border
                         ${ifShowPlayIcon ? 'block' : 'hidden'}
                     `}>
-                    <FaCirclePlay size={40} />
+                    <FaCirclePlay size={40} color='white'/>
                 </div>
             </div>
             {/* movie details */}

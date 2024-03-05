@@ -1,7 +1,6 @@
 'use client'
 
 import React, { useEffect, useRef, useState } from 'react';
-import Image from "next/image";
 import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax';
 import { useHeros } from '../hooks/useHeros'
 import { Button } from '@/components/ui/button';
@@ -45,17 +44,6 @@ const HeroSection = () => {
 
   const Page = ({ offset, imageSrc, title, actors, onClick }: PageProps) => (
     <ParallaxLayer offset={offset} speed={0.2} onClick={onClick} >
-      {/* <Image
-        className='
-          brightness-50
-          md:h-full
-          h-24
-        '
-        src={imageSrc}
-        alt="My Image"
-        layout="fill"
-        
-      /> */}
       <img
         className='
            brightness-50
@@ -72,21 +60,19 @@ const HeroSection = () => {
               z-50 
               relative
               ml-20
-              mt-20
+              mt-24
               lg:mt-56
               md:mt-48
               sm:mt-20
               flex
           '
       >
-        <div className='flex flex-col gap-1'>
+        <div className=''>
           <div 
             className='
-              flex
-              flex-col
-              sm:flex 
-              sm:flex-row 
-              sm:items-center 
+              flex 
+              flex-row 
+              items-center 
               gap-2 
               py-2
             '
@@ -94,30 +80,36 @@ const HeroSection = () => {
             <div 
               className='
                 text-white
-                text-4xl
+                text-3xl
+                sm:text-4xl
               '
             >
               {title}
             </div>
-            <Button 
-              className='
-                text-lg 
-                p-4 
-                rounded-lg
-                 w-48
-                sm:w-auto
-              '
-            >
-              <FaPlayCircle />
-              <span 
+            <div className='hidden sm:block'>
+              <Button 
                 className='
-                  ml-2
-                ' 
-                onClick={() => { }}
+                  text-lg 
+                  p-4 
+                  rounded-lg
+                  w-48
+                  sm:w-auto
+                '
               >
-                Play Now
-              </span>
-            </Button>
+                <FaPlayCircle />
+                <span 
+                  className='
+                    ml-2
+                  ' 
+                  onClick={() => { }}
+                >
+                  Play Now
+                </span>
+              </Button>
+            </div>
+            <div className='block sm:hidden'>
+              <FaPlayCircle size={30} color='white'/>
+            </div>
           </div>
           <div 
             className='
@@ -129,10 +121,9 @@ const HeroSection = () => {
               sm:flex flex-row
             '
           >
-            {actors && actors.map((actor) => {
-              return (
-                <div key={actor}>{actor}</div>
-              )
+            {actors && actors.map((actor,index) => {
+              return index <= 3 ? <div key={actor}>{actor}</div> : null 
+
             })}
           </div>
         </div>
@@ -159,7 +150,7 @@ const HeroSection = () => {
             mt-48
             lg:mt-96
             md:mt-80
-            sm: mt-56
+            sm:mt-48
             w-1/3
             lg:w-1/6
             md:w-1/3

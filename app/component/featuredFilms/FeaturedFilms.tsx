@@ -39,7 +39,7 @@ const FeaturedFilms = () => {
     };
 
     return (
-        <div className='flex flex-col gap-2 border-b-2'>
+        <div className='flex flex-col gap-2 border-b-2 mt-2'>
             <div
                 className='
                     flex 
@@ -51,7 +51,7 @@ const FeaturedFilms = () => {
             >
                 <div className='flex flex-row gap-1 items-center'>
                     <RiMovieLine size={30} className='rouded-lg' />
-                    <div className='text-xl text-black font-bold'>Featured Films</div>
+                    <div className='text-xl text-black font-bold font-serif'>Featured Films</div>
                 </div>
                 <div className='text-neutral-500'>View all</div>
             </div>
@@ -84,6 +84,7 @@ const FeaturedFilms = () => {
                         overflow-x-scroll
                         overflow-y-hidden
                         z-0
+                        no-scrollbar
                     '
                     ref={movieContainerRef}
                     onScroll={handleScroll}
@@ -108,7 +109,7 @@ const FeaturedFilms = () => {
                         h-full 
                         z-20 
                         w-12
-                        opacity-80 
+                        opacity-50
                         absolute 
                         right-0 
                         flex 
@@ -117,7 +118,7 @@ const FeaturedFilms = () => {
                         ${canScrollRight ? 'block' : 'hidden'}
                     `}
                 >
-                <FaChevronCircleRight size={30}/>
+                    <FaChevronCircleRight size={30} className=' opacity-100'/>
                 </div>
             </div>
         </div>

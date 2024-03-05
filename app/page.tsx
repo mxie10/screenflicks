@@ -15,7 +15,10 @@ export default function Home() {
             items-center 
             justify-center 
             mt-10 
-            w-1/6 
+            w-5/6
+            lg:w-1/6 
+            md:w-2/6
+            sm:w-1/2
             text-white
           '
       >
@@ -31,8 +34,17 @@ export default function Home() {
           mx-auto
         '
     >
-      <HeroSection />
-      <div className="px-9 mt-10">
+      <div className="w-full">
+        <HeroSection />
+      </div>
+      <div 
+        className='
+          px-2
+          md:px-5
+          lg:px-14 
+          mt-4
+        '
+      >
         <FeaturedFilms />
         <FeaturedFilms />
         <FeaturedFilms />

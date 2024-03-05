@@ -9,6 +9,7 @@ import "./globals.css";
 import Footer from "./component/Footer";
 import LoginModal from "./component/modals/LoginModal";
 import RegisterModal from "./component/modals/RegisterModal";
+import SearchBar from "./component/SearchBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,15 +29,23 @@ const LayoutBody: React.FC<LayoutBodyProps> = ({ children }) => {
     return (
       <div
         className="
-          absolute 
-          left-3 
-          top-3 
-          cursor-pointer 
-          md:hidden
+          flex
+          flex-row
+          gap-3
+          p-2
+          items-center
         "
-        onClick={toggleSidebar}
       >
-        <FaAlignJustify size={25} />
+        <div
+          className="
+            cursor-pointer 
+            lg:hidden
+          "
+          onClick={toggleSidebar}
+        >
+          <FaAlignJustify size={25} />
+        </div>
+        <SearchBar/>
       </div>
     )
   }
@@ -48,10 +57,10 @@ const LayoutBody: React.FC<LayoutBodyProps> = ({ children }) => {
       <ToggleIcon />
       <SideBar />
       <NavBar />
-      <div className="mt-12">
+      <div className="">
         {children}
       </div>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   )
 }
