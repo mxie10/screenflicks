@@ -1,16 +1,15 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react'
-import { useRouter } from 'next/navigation';
 import MovieCard from '../MovieCard';
 import { RiMovieLine } from "react-icons/ri";
-import { useFeaturedMovies } from '../../hooks/useFeaturedMovies';
+import { useTVShows } from '../../hooks/useTVShows';
 import MovieCardType from '../../interfaces/MovieCardProps';
 import { FaChevronCircleRight } from "react-icons/fa";
 import { FaChevronCircleLeft } from "react-icons/fa";
 
-const FeaturedFilms = () => {
-    const { featuredMovies } = useFeaturedMovies();
-    const router = useRouter();
+const TVShows = () => {
+
+    const { tvShows } = useTVShows();
     const movieContainerRef = useRef<HTMLDivElement>(null);
     const [canScrollLeft, setCanScrollLeft] = useState(false);
     const [canScrollRight, setCanScrollRight] = useState(false);
@@ -39,11 +38,6 @@ const FeaturedFilms = () => {
         }
     };
 
-    const handleCardClick = (movie: MovieCardType) => {
-        const encodedItem = encodeURIComponent(JSON.stringify(movie));
-        router.push(`/moviedetails?encodedItem=${encodedItem}`);
-    };
-
     return (
         <div className='flex flex-col gap-2 border-b-2 mt-2'>
             <div
@@ -57,7 +51,7 @@ const FeaturedFilms = () => {
             >
                 <div className='flex flex-row gap-1 items-center'>
                     <RiMovieLine size={30} className='rouded-lg' />
-                    <div className='text-xl text-black font-bold font-serif'>Featured Films</div>
+                    <div className='text-xl text-black font-bold font-serif'>TV Shows</div>
                 </div>
                 <div className='text-neutral-500'>View all</div>
             </div>
@@ -95,7 +89,7 @@ const FeaturedFilms = () => {
                     ref={movieContainerRef}
                     onScroll={handleScroll}
                 >
-                    {featuredMovies && featuredMovies.map((item: MovieCardType) => {
+                    {tvShows && tvShows.map((item: MovieCardType) => {
                         return (
                             <MovieCard
                                 title={item.title}
@@ -104,7 +98,6 @@ const FeaturedFilms = () => {
                                 length={item.length}
                                 type={item.type}
                                 rate={item.rate}
-                                onClick={() => handleCardClick(item)}
                             />
                         )
                     })}
@@ -132,4 +125,4 @@ const FeaturedFilms = () => {
     )
 }
 
-export default FeaturedFilms;
+export default TVShows;

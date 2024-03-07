@@ -68,7 +68,7 @@ const NavBar = () => {
                         </div>
                     )
                 })}
-                <SearchBar/>
+                <SearchBar hide={true}/>
             </div>
             <div className='flex flex-row justify-center items-center gap-5'>
             <div className='text-md cursor-pointer font-semibold font-serif'>Redeem</div>

@@ -26,15 +26,19 @@ const legal = [
 
 const Footer = () => {
 
-    const FooterMonue = (props:any) => {
+    const FooterMenu = (props:any) => {
         const {subMenus} = props;
         return (
             <div className='flex flex-col gap-5'>
-                <div className='font-bold'>COMPANY</div>
                 <div className='flex flex-col gap-2'>
                     {subMenus.map((item:any,index:number)=>{
                         return (
-                            <div key={index}>{item.title}</div>
+                            <div 
+                                key={index}
+                                className='text-sm text-neutral-7 cursor-pointer'
+                            >
+                                {item.title}
+                            </div>
                         )
                     })}
                 </div>
@@ -52,7 +56,7 @@ const Footer = () => {
                 px-10
                 pt-7
                 pb-16
-                bg-neutral-200
+                bg-neutral-300
                 mt-10
         '
         >
@@ -65,19 +69,21 @@ const Footer = () => {
                     <FaLinkedin size={25} color='black' />
                 </div>
             </div>
-            <div 
-                className='
-                    grid 
-                    grid-cols-2 
-                    md:grid-cols-4 
-                    gap-2
-                    mt-7
-                '
-            >
-                <FooterMonue subMenus={companySubMenus}/>
-                <FooterMonue subMenus={supportSubMenus}/>
-                <FooterMonue subMenus={partners}/>
-                <FooterMonue subMenus={legal}/>
+            <div className='flex flex-row items-center w-full relative'>
+                <div 
+                    className='
+                        grid 
+                        grid-cols-2 
+                        md:grid-cols-4 
+                        gap-2
+                        mt-7
+                    '
+                >
+                    <FooterMenu subMenus={companySubMenus}/>
+                    <FooterMenu subMenus={supportSubMenus}/>
+                    <FooterMenu subMenus={partners}/>
+                    <FooterMenu subMenus={legal}/>
+                </div>
             </div>
         </div>
     )

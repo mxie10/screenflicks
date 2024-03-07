@@ -1,18 +1,67 @@
 'use client'
 
-import React, { useRef,useEffect } from 'react'
+import React, { useRef,useEffect } from 'react';
+import {useRouter} from 'next/navigation';
 import useSidebar from '../hooks/useSidebar';
 import { MdCancel } from "react-icons/md";
+import useLoginModal from '../hooks/useLoginModal';
+
+const menuList1 = [
+    {
+        title: 'Home',
+        link: '/'
+    },
+    {
+        title: 'Movies',
+        link: '/movie'
+    },
+    {
+        title: 'TV',
+        link: '/'
+    },
+    {
+        title: 'Anime',
+        link: '/'
+    },
+    {
+        title: 'Free',
+        link: '/'
+    },
+]
 
 const SideBar = () => {
     const sidebarModal = useSidebar();
     const sidebarRef = useRef(null);
+    const router = useRouter();
+    const loginModal = useLoginModal();
+    
+    const openLoginModal =() => {
+        loginModal.onOpen();
+        console.log('loginModal.isOpen?',loginModal.isOpen);
+    }
 
     const onClose = () => {
         sidebarModal.onClose();
     }
 
-    const menueItem = 'font-bold '
+    const handleOnClick = (title:string) => {
+        if(title === 'Movies'){
+            router.push('/movie');
+            onClose();
+        }else if(title === 'Home'){
+            router.push('/');
+            onClose();
+        }else if(title === 'Sign In'){
+            loginModal.onOpen();
+            onClose();
+        }
+    }
+
+    const signIn = () => {
+        loginModal.onOpen();
+        onClose();
+    }
+
 
     return (
         <div
@@ -45,17 +94,29 @@ const SideBar = () => {
                     flex-col
                     mt-10
                     justify-between
+                    px-3
                 '
             >
-                <div className='flex flex-col gap-3 font-serif font-bold'>
-                    <div>Movies</div>
-                    <div>TV</div>
-                    <div>Anime</div>
-                    <div>Free</div>
+                <div className='flex flex-col gap-3 font-serif font-bold w-full'>
+                    {menuList1 && menuList1.map((item,index)=>{
+                        return (
+                            <div 
+                                className='w-full cursor-pointer'
+                                onClick = {() => handleOnClick(item.title)}
+                            > 
+                                {item.title}
+                            </div>
+                        )
+                    })}
                 </div>
                 <div className='flex flex-col gap-3 font-serif font-bold'>
                     <div>Redeem</div>
-                    <div>Sign In</div>
+                    <div
+                         onClick = {signIn}
+                         className='cursor-pointer'
+                    >
+                        Sign In
+                    </div>
                 </div>
             </div>
         </div>

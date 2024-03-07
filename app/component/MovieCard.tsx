@@ -29,7 +29,7 @@ const MovieCard: React.FC<MovieCardTypes> = (props) => {
                 className={`
                     flex 
                     flex-col 
-                    rounded-md
+                    rounded-sm
                     relative 
                     items-center 
                     justify-center 

@@ -10,7 +10,7 @@ const MovieScreen = () => {
     const { movies } = useMovies();
     const router = useRouter();
 
-    const handleMovieCardClick = (movie: MovieCardType) => {
+    const handleCardClick = (movie: MovieCardType) => {
         const encodedItem = encodeURIComponent(JSON.stringify(movie));
         router.push(`/moviedetails?encodedItem=${encodedItem}`);
     };
@@ -45,7 +45,7 @@ const MovieScreen = () => {
                                 type={item.type}
                                 rate={item.rate}
                                 souce='movieList'
-                                onClick={() => handleMovieCardClick(item)}
+                                onClick={() => handleCardClick(item)}
                             />
                         </div>
                     )
@@ -57,17 +57,3 @@ const MovieScreen = () => {
 }
 
 export default MovieScreen;
-
-
-// interface MovieCardProps {
-//     title: string;
-//     imageSrc: string;
-//     year: number;
-//     length: MoveLength;
-//     type: Array<string>;
-//     rate: string;
-//     cardStyle?:string;
-//     souce?:string;
-//     description?:string;
-//     onClick?:() => void;
-// }

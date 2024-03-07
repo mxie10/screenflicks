@@ -1,31 +1,9 @@
+import ContentSection from "./component/ContentSection";
 import HeroSection from "./component/HeroSection";
 import FeaturedFilms from "./component/featuredFilms/FeaturedFilms";
+import TVShows from "./component/featuredFilms/TVShows";
 
 export default function Home() {
-
-  const ExploreMore = () => {
-    return (
-      <div 
-        className='
-            bg-black 
-            p-4 
-            font-bold 
-            rounded-lg 
-            flex 
-            items-center 
-            justify-center 
-            mt-10 
-            w-5/6
-            lg:w-1/6 
-            md:w-2/6
-            sm:w-1/2
-            text-white
-          '
-      >
-        Explore More
-      </div>
-    )
-  }
 
   return (
     <div
@@ -46,12 +24,9 @@ export default function Home() {
         '
       >
         <FeaturedFilms />
-        <FeaturedFilms />
-        <FeaturedFilms />
+        <TVShows/>
       </div>
-      <div className="flex items-center justify-center">
-        <ExploreMore/>
-      </div>
+      <ContentSection/>
     </div>
   );
 }
