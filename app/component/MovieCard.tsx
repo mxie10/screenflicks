@@ -70,9 +70,9 @@ const MovieCard: React.FC<MovieCardTypes> = (props) => {
             </div>
             {/* movie details */}
             <div className='flex flex-col mt-2 h-1/5'>
-                <div className='text-md font-bold'>{title}</div>
+                <div className='text-md sm:text-md md:text-ld font-bold'>{title}</div>
                 <div className='flex flex-row justify-between'>
-                    <div className='text-xs font-semibold'>
+                    <div className='text-xs font-semibold hidden md:block'>
                         {year} - {length.hour} hr {length.min} min
                     </div>
                     <div

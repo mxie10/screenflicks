@@ -51,7 +51,7 @@ const LayoutBody: React.FC<LayoutBodyProps> = ({ children }) => {
   }
 
   return (
-    <div className="flex flex-col relative z-10 min-h-screen bg-neutral-200">
+    <div className="w-full flex flex-col relative z-10 min-h-screen bg-neutral-200">
       <LoginModal/>
       <RegisterModal/>
       <ToggleIcon />

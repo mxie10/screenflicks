@@ -13,7 +13,7 @@ const menu = [
     },
     {
         title: 'TV',
-        link:''
+        link:'/tvshows'
     },
     {
         title: 'Anime',

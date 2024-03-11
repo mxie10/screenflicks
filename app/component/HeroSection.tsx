@@ -46,7 +46,7 @@ const HeroSection = () => {
     <ParallaxLayer offset={offset} speed={0.2} onClick={onClick} >
       <img
         className='
-           brightness-50
+           brightness-75
            w-full
            h-full
            absolute

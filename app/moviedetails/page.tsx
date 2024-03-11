@@ -102,7 +102,7 @@ const MovieDetailsScreen: React.FC<MovieDetailsScreenProps> = (props) => {
                                 </div>
                             </div>
                             {/* Rate */}
-                            <div className='text-neutral-200 flex lex-row gap-2'>
+                            <div className='mt-1 sm:mt-0 text-neutral-200 flex lex-row gap-2'>
                                 <div className='font-bold'>Rated:</div>
                                 <div>
                                     {decodedItem.rate}

@@ -8,8 +8,6 @@ export default function Home() {
   return (
     <div
       className='
-          max-w-[2520px] 
-          mx-auto
         '
     >
       <div className="w-full">

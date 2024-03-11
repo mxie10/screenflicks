@@ -48,6 +48,9 @@ const SideBar = () => {
         if(title === 'Movies'){
             router.push('/movie');
             onClose();
+        }else if(title === 'TV'){
+            router.push('/tvshows');
+            onClose();
         }else if(title === 'Home'){
             router.push('/');
             onClose();

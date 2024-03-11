@@ -35,7 +35,7 @@ const ExploreMore = () => {
             sm:w-1/3
             text-white
             font-serif
-             bg-orange-400
+             bg-orange-500
           '
       >
         Explore More

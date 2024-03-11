@@ -2,27 +2,27 @@
     "heroSection": [
         {
             "title":"Frozen",
-            "imageSrc":"https://wallpapers.com/images/high/frozen-2-pictures-kywcpwsbxvhrshvj.webp",
+            "imageSrc":"/images/hero/frozen.jpg",
             "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
         },
         {
             "title":"The Godfather",
-            "imageSrc":"/images/hero/theGodFather.jpg",
+            "imageSrc":"https://s3.us-west-2.amazonaws.com/files.catholicworldreport.com/2022/04/thegodfather1972_sg-678x375.jpg",
             "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
         },
         {
             "title":"The StepDaughter",
-            "imageSrc":"/images/hero/theStepDaughter.jpg",
+            "imageSrc":"https://m.media-amazon.com/images/M/MV5BMjhkZmEzNmEtNzEwNy00MTM3LWEwYjQtZTRmOWI1ZDAzN2FjXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg",
             "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
         },
         {
             "title":"Colombiana",
-            "imageSrc":"/images/hero/colombiana.jpg",
+            "imageSrc":"https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUcBUZori7FOxwIaZn52mBtnYvnhPWj99ALlivxbGQi3kvUd1vzsBIbybFon5a1xb0c1A07ZwiM6BYZIrqLyOB2AxHlNy3d4uzbw.jpg?r=69d",
             "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
         },
         {
             "title":"Shaw Shank Redemption",
-            "imageSrc":"/images/hero/shawshankRedemption.jpg",
+            "imageSrc":"https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p15987_k_h8_ad.jpg",
             "actors":["Mamoru Miyano","Maaya Sakamoto","Kana Hanazawa","Hiroshi Kamiya"]
         }
     ],
